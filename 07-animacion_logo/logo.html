@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacion logo</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .logo {
+            width: 300px;
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+            animation: aparecerElegante 3s ease infinite reverse;
+        }
+
+        @keyframes aparecerElegante {
+            0% {
+                opacity: 0;
+                transform: translateY(20px) scale(0.95);
+            }
+
+            60% {
+                opacity: 1;
+                transform: translateY(0px) scale(1.02);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="logo3.png" class="logo">
+    </div>
+</body>
+
+</html>
